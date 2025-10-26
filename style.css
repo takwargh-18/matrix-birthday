@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  font-family: monospace;
+}
+
+#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00ff00;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 0 0 20px #0f0, 0 0 40px #0f0;
+  z-index: 1;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Responsive – ขยายขนาดข้อความบนหน้าจอใหญ่ */
+@media (min-width: 768px) {
+  .center-text {
+    font-size: 3.5em;
+  }
+}
